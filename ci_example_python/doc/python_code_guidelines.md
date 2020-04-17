@@ -22,7 +22,15 @@ good practice to check them upon creation of a new package or code refactoring.
 
 ## II. Python Coding Guidelines
 
-Regarding the style, follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
+- Regarding the style, follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
+- Use [flake8](https://flake8.pycqa.org) and fix all issues it shows.  This will
+  ensure compliance with PEP 8 and also point out some critical issues like
+  usage of undefined variables.
+- To automatically format you code, you may use
+  [black](https://black.readthedocs.io).  When doing this, add `--line-length 79`
+  to not violate PEP 8.
+  Note, however, that black requires Pytyon 3.6, which may not be available for
+  everyone.  Therefore its usage is not mandatory.
 
 ## III. Python Version
 
